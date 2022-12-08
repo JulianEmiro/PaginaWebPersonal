@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+     <title>HOJA DE VIDA</title>
+     <meta charset="utf-8">
+     <meta name="description" content="Esta es un ejemplo de mi
+     hoja de vida">
+     <meta name="keyworks" content="HTML, CSS, JavaScript, web,
+     página, curriculum">
+     <link rel="icon" href="imagenes/icono.png" type="image/png"
+     sizes="20x20">
+     <link rel="stylesheet" type="text/css" href="css/style.css">
+     <script type="text/javascript" src="js/funciones.js"></script>
+    <figure> <!-- sector para la foto -->
+         <img src="imagenes/foto1hv.jpg"
+         alt="Foto HV"
+         title="Foto HV" height="220">
+    </figure>
+     <div id="titulo"> <!-- sector para el título HV -->
+     <p>Hoja de Vida</p>
+     </div>
+     <div id="subtitulo"> <!-- sector para el nombre de la persona -->
+     <p>Julian Emiro Gonzalez Perez</p>
+     </div>
+    </head>
+    <body>
+
+        <nav> <!-- Aquí empieza la definición del menú de navegación -->
+        <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="misestudios.html">Mis Estudios</a></li>
+        <li><a href="miexperiencia.html">Mi Experiencia</a></li>
+        <li><a id="contacto"; href="contacto.html">Contacto</a></li>
+        </ul>
+        </nav>
+            <section   class="form-register"> 
+                <form  action="/my-handling-form-page" method="post">
+                <center><p>formulario de contacto</p>
+                <input class="controls" type="text" name="nombres"  id="nombres" placeholder="ingrese su nombre" required> 
+                <input class="controls" type="text" apellido="apellidos"  id="apellidos" placeholder="ingrese su apellido" required>
+                <input class="controls" type="tel" telefono="telefono"  id="telefono" placeholder="ingrese su telefono" pattern="[0-9]{10}" title="solo nuemros permitidos de 10 digitos" required>
+                <div id="genero"> <label>Genero:</label><br>
+                <input type="radio" name="genero">Masculino
+                <input type="radio" name="genero">Femenino</div>
+                <input class="controls" type="number range" edad="edad" id="edad" placeholder="Edad" pattern="[0-120]" required>
+                <textarea class="controls" rows='6' placeholder="Mensaje" required></textarea>
+                <input class="controls" type="email"email="email"  id="email" placeholder="ingrese su correo" required >
+                <input class="controls" type="password" password="comtraseña"  id="contraseña" placeholder="ingrese su contraseña"><br>
+                <p><input type="checkbox" required>estoy de acuerdo con<a href="#">terminos y condiciones</a></p>
+                <div>
+                    <button type="submit">ENVIAR</button>
+                </div>
+                <p><a href="#">¿ya tengo cuenta?</a></p></center> 
+                </form> 
+            </section>
+            <aside id="barra1"> <!-- definimos el bloque del LADO DERECHO -->
+                <p><h4>MIS REDES SOCIALES</h4></p>
+                 <ul>
+                 <li><a href="https://wa.me/3229520366"><img src="imagenes/imgw.png" height="50px"></a></li>
+                 <li><a href="https://wa.me/3229520366"><img src="imagenes/imgi.png" height="50px"></a></li>
+                 <li><a href="https://wa.me/3229520366"><img src="imagenes/imgf.jpg" height="50px"></a></li>
+                 <ul>
+            </aside> <!-- Aquí terminan los apartados o comentarios -->
+            <footer> <!-- Finalizamos la estructura con el pie de la página -->
+                <h4>.. power by SENA - CDAE 2019..</h4>
+                </footer> 
+    </body>
+</html>
+ 
