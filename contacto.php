@@ -1,38 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-     <title>HOJA DE VIDA</title>
-     <meta charset="utf-8">
-     <meta name="description" content="Esta es un ejemplo de mi
-     hoja de vida">
-     <meta name="keyworks" content="HTML, CSS, JavaScript, web,
-     página, curriculum">
-     <link rel="icon" href="imagenes/icono.png" type="image/png"
-     sizes="20x20">
-     <link rel="stylesheet" type="text/css" href="css/style.css">
-     <script type="text/javascript" src="js/funciones.js"></script>
-    <figure> <!-- sector para la foto -->
-         <img src="imagenes/foto1hv.jpg"
-         alt="Foto HV"
-         title="Foto HV" height="220">
-    </figure>
-     <div id="titulo"> <!-- sector para el título HV -->
-     <p>Hoja de Vida</p>
-     </div>
-     <div id="subtitulo"> <!-- sector para el nombre de la persona -->
-     <p>Julian Emiro Gonzalez Perez</p>
-     </div>
-    </head>
+    <?php 
+    include("cabecera.php");
+    ?>
     <body>
-
-        <nav> <!-- Aquí empieza la definición del menú de navegación -->
-        <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="misestudios.html">Mis Estudios</a></li>
-        <li><a href="miexperiencia.html">Mi Experiencia</a></li>
-        <li><a id="contacto"; href="contacto.html">Contacto</a></li>
-        </ul>
-        </nav>
+    <?php 
+    include("menu.php");
+    ?>
+    <main>
             <section   class="form-register"> 
                 <form  action="/my-handling-form-page" method="post">
                 <center><p>formulario de contacto</p>
@@ -61,9 +36,11 @@
                  <li><a href="https://wa.me/3229520366"><img src="imagenes/imgf.jpg" height="50px"></a></li>
                  <ul>
             </aside> <!-- Aquí terminan los apartados o comentarios -->
-            <footer> <!-- Finalizamos la estructura con el pie de la página -->
-                <h4>.. power by SENA - CDAE 2019..</h4>
-                </footer> 
+    </main>
+
+    <?php 
+    include("piepagina.php");
+    ?>
     </body>
 </html>
  
