@@ -21,17 +21,24 @@
                     <th id="definicion">DEFINICION</th>
                 </tr>
                 <?php
-                $conexion= mysqli_connect("localhost","root","","glosario");
-                if($conexion){
-                    $consulta="SELECT * FROM palabra";
-                    $resultado = mysqli_query($conexion, $consulta);
-                    while($fila=$resultado->fetch_array()){
+                include("./include/conect.php");
+                $LinkBD=Conectarse("sql101.epizy.com" , "epiz_33095202" , "BPkRQbQUbR" , "epiz_33095202_web_personal_APRENDIZ"); 
+                 $ScriptSQL = "SELECT * FROM glosario"; 
+                if ($DatosGlosario = mysqli_query($LinkBD, $ScriptSQL )) {
+                    while($fila=$DatosGlosario->fetch_array()){
                         echo " <tr>
                         <td id='terminos'>".$fila['termino']."</td>
                         <td id='cuadrito'>".$fila['definicion']."</td>
                     </tr>";
                     }
+                    mysqli_free_result($DatosEstudio);
                 }
+                else {
+                    printf("Hubo errores al leer los datos");
+                    }
+                    //Cerrar la conexión con el servidor de bases de datos:
+                    mysqli_close($LinkBD); 
+                
                 ?>
                 
             </table>
